@@ -38,7 +38,6 @@
             this.btnEight = new System.Windows.Forms.Button();
             this.btnNine = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
-            this.btnDot = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnMul = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -47,7 +46,7 @@
             this.btnClr = new System.Windows.Forms.Button();
             this.btnRoot = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSquare = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inputLabel
@@ -182,27 +181,13 @@
             this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnZero.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
             this.btnZero.ForeColor = System.Drawing.Color.Black;
-            this.btnZero.Location = new System.Drawing.Point(84, 281);
+            this.btnZero.Location = new System.Drawing.Point(12, 281);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(66, 42);
             this.btnZero.TabIndex = 10;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
             this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
-            // 
-            // btnDot
-            // 
-            this.btnDot.BackColor = System.Drawing.Color.Transparent;
-            this.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDot.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.btnDot.ForeColor = System.Drawing.Color.Black;
-            this.btnDot.Location = new System.Drawing.Point(156, 281);
-            this.btnDot.Name = "btnDot";
-            this.btnDot.Size = new System.Drawing.Size(66, 42);
-            this.btnDot.TabIndex = 11;
-            this.btnDot.Text = ".";
-            this.btnDot.UseVisualStyleBackColor = false;
-            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnDiv
             // 
@@ -302,17 +287,17 @@
             this.btnOne.UseVisualStyleBackColor = false;
             this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
-            // button1
+            // btnSquare
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(12, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 42);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "x2";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSquare.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSquare.ForeColor = System.Drawing.Color.Black;
+            this.btnSquare.Location = new System.Drawing.Point(12, 87);
+            this.btnSquare.Name = "btnSquare";
+            this.btnSquare.Size = new System.Drawing.Size(66, 42);
+            this.btnSquare.TabIndex = 20;
+            this.btnSquare.Text = "x2";
+            this.btnSquare.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -320,7 +305,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(307, 336);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSquare);
             this.Controls.Add(this.btnOne);
             this.Controls.Add(this.btnRoot);
             this.Controls.Add(this.btnClr);
@@ -329,7 +314,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnMul);
             this.Controls.Add(this.btnDiv);
-            this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnNine);
             this.Controls.Add(this.btnEight);
@@ -358,7 +342,6 @@
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnNine;
         private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnDiv;
         private System.Windows.Forms.Button btnMul;
         private System.Windows.Forms.Button button3;
@@ -367,7 +350,7 @@
         private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.Button btnRoot;
         private System.Windows.Forms.Button btnOne;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSquare;
     }
 }
 

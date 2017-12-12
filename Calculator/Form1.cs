@@ -67,11 +67,6 @@ namespace Calculator
         {
             inputLabel.Text += btnZero.Text;
         }
-
-        private void btnDot_Click(object sender, EventArgs e)
-        {
-            string temp = inputLabel.Text;
-            
-        }
+        
     }
 }
