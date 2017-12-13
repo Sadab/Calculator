@@ -12,6 +12,7 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        double num1, num2;
         public Form1()
         {
             InitializeComponent();
@@ -70,8 +71,15 @@ namespace Calculator
 
         private void btnDot_Click(object sender, EventArgs e)
         {
-            string temp = inputLabel.Text;
-            
+            if (inputLabel.Text != "")
+            {
+                inputLabel.Text += ".";
+            }
+        }
+
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            inputLabel.ResetText();
         }
     }
 }

@@ -41,13 +41,13 @@
             this.btnDot = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnMul = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnEqual = new System.Windows.Forms.Button();
             this.btnClr = new System.Windows.Forms.Button();
             this.btnRoot = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSquare = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inputLabel
@@ -209,7 +209,7 @@
             this.btnDiv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDiv.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
             this.btnDiv.ForeColor = System.Drawing.Color.Black;
-            this.btnDiv.Location = new System.Drawing.Point(228, 87);
+            this.btnDiv.Location = new System.Drawing.Point(229, 87);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(66, 42);
             this.btnDiv.TabIndex = 12;
@@ -228,41 +228,41 @@
             this.btnMul.Text = "x";
             this.btnMul.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnMinus
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(228, 185);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 42);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMinus.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMinus.ForeColor = System.Drawing.Color.Black;
+            this.btnMinus.Location = new System.Drawing.Point(228, 185);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(66, 42);
+            this.btnMinus.TabIndex = 14;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPlus
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(228, 233);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(66, 42);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPlus.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPlus.ForeColor = System.Drawing.Color.Black;
+            this.btnPlus.Location = new System.Drawing.Point(228, 233);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(66, 42);
+            this.btnPlus.TabIndex = 15;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnEqual
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(228, 281);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(66, 42);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "=";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEqual.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEqual.ForeColor = System.Drawing.Color.Black;
+            this.btnEqual.Location = new System.Drawing.Point(228, 281);
+            this.btnEqual.Name = "btnEqual";
+            this.btnEqual.Size = new System.Drawing.Size(66, 42);
+            this.btnEqual.TabIndex = 16;
+            this.btnEqual.Text = "=";
+            this.btnEqual.UseVisualStyleBackColor = true;
             // 
             // btnClr
             // 
@@ -275,6 +275,7 @@
             this.btnClr.TabIndex = 17;
             this.btnClr.Text = "C";
             this.btnClr.UseVisualStyleBackColor = true;
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // btnRoot
             // 
@@ -302,17 +303,17 @@
             this.btnOne.UseVisualStyleBackColor = false;
             this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
-            // button1
+            // btnSquare
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(12, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 42);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "x2";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSquare.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSquare.ForeColor = System.Drawing.Color.Black;
+            this.btnSquare.Location = new System.Drawing.Point(12, 87);
+            this.btnSquare.Name = "btnSquare";
+            this.btnSquare.Size = new System.Drawing.Size(66, 42);
+            this.btnSquare.TabIndex = 20;
+            this.btnSquare.Text = "x2";
+            this.btnSquare.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -320,13 +321,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(307, 336);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSquare);
             this.Controls.Add(this.btnOne);
             this.Controls.Add(this.btnRoot);
             this.Controls.Add(this.btnClr);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnEqual);
+            this.Controls.Add(this.btnPlus);
+            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnMul);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btnDot);
@@ -361,13 +362,13 @@
         private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnDiv;
         private System.Windows.Forms.Button btnMul;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnClr;
         private System.Windows.Forms.Button btnRoot;
         private System.Windows.Forms.Button btnOne;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSquare;
     }
 }
 
